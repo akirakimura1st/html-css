@@ -1,0 +1,96 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	color: #6c6b6b;
+}
+
+a {
+	text-decoration: none;
+}
+
+.step-box {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.step-list-box {
+	width: 300px;
+	padding: 10px;
+	border: 1px solid lightgray;
+	margin: 0 auto;
+	float: left;
+	position: relative;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.step-image {
+	height: 140px;
+	background-position: bottom;
+	background-size: cover;
+	margin-bottom: 10px;
+}
+
+.step-image1 {
+		background-image: url(img/flow01.png);
+}
+
+.step-image2 {
+		background-image: url(img/flow02.png);
+}
+
+.step-image3 {
+		background-image: url(img/flow03.png);
+}
+
+.step-list-box:nth-child(n+2) {
+	margin-left: 30px;
+
+}
+
+.step-nanber {
+	height: 27px;
+	width: 50px;
+	background-color: orange;
+	float: left;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.step-nanber-text {
+	color: white;
+	text-align: center;
+}
+
+@media screen and (max-width:768px) {
+	.step-box {
+		width: 100%;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	.step-list-box {
+		width: 90%;
+		display: block;
+		margin: 0 auto;
+		float: none;
+		margin-bottom: 20px;
+	}
+
+	.step-list-box:nth-child(n+2) {
+		width: 90%;
+		display: block;
+		margin: 0 auto;
+		float: none;
+		margin-bottom: 20px;
+	}
+
+	.step-list-box:last-child {
+		margin-bottom: 0px;
+	}
+
+	.step-image {
+		height: 270px;
+	}
+}

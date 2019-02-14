@@ -1,0 +1,648 @@
+/* 初期定義 */
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	color: white;
+}
+
+a:visited {
+	color: white;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* headerの設定 */
+header {
+	background-color: #EC715F;
+	width: 100%;
+	height: 70px;
+}
+
+.header-box {
+	display: block;
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.logo {
+	float: left;
+	height: 70px;
+}
+
+.hamberger-menu {
+	display: none;
+}
+
+.nav {
+	float: right;
+}
+
+.nav-list-item {
+	width: 120px;
+	float: left;
+	line-height: 70px;
+	padding: 0 30px;
+	list-style: none;
+	font-size: 16px;
+	color: #FAFAFA;
+}
+
+/* main-visualの設定 */
+.main-visual {
+	background-image: url(img/mv.png);
+	width: 100%;
+	height: 650px;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #FAFAFA;
+}
+
+.main-visual-text1 {
+	padding-top: 200px;
+	font-size: 64px;
+}
+
+.main-visual-text2 {
+	margin-top: 10px;
+	font-size: 20px;
+}
+
+/* portfolioの設定 */
+
+.portfolio {
+	background-color: #ECEFF1;
+	width: 100%;
+}
+
+.portfolio-box {
+	width: 920px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.portfolio-box-text1 {
+	padding-top: 90px;
+	font-size: 32px;
+	color: #000000;
+}
+
+.portfolio-box-hr {
+	width: 70px;
+	height: 3px;
+	margin: 0 auto;
+	margin-top: 8px;
+	background-color: #EC715F;
+}
+
+.portfolio-box-text2 {
+	font-size: 16px;
+	color: #000000;
+	padding-top: 30px;
+}
+
+.portfolio-bg-box {
+	width: 920px;
+	padding: 30px 0 90px 0;
+	margin: 0 auto;
+}
+
+.portfolio-content {
+	float: left;
+	height: 250px;
+	width: 300px;
+	background-size: cover;
+	background-position: center;
+	margin: 10px 10px 0 0;
+}
+
+.portfolio-content:nth-child(-n+3) {
+	margin-top: 0px;
+}
+
+.portfolio-content:nth-child(3n) {
+	margin-right: 0px;
+}
+
+.bg1 {
+	background-image: url(img/sketch.jpg);
+}
+
+.bg2 {
+	background-image: url(img/websuku.png);
+}
+
+.bg3 {
+	background-image: url(img/write.jpg);
+}
+
+.bg4 {
+	background-image: url(img/webcamp.png);
+}
+
+.bg5 {
+	background-image: url(img/talk.jpg);
+}
+
+.bg6 {
+	background-image: url(img/webcamp-mother.png);
+}
+
+/* featureの設定 */
+
+.feature {
+	width: 100%;
+}
+
+.feature-box {
+	width: 980px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.feature-text1 {
+	font-size: 32px;
+	color: #000000;
+	padding-top: 90px;
+}
+
+.feature-hr {
+	height: 3px;
+	width: 70px;
+	background-color: #EC715F;
+	margin: 0 auto;
+	margin-top: 8px;
+}
+
+.feature-text2 {
+	font-size: 16px;
+	color: #000000;
+	padding-top: 30px;
+}
+
+.feature-strength-box {
+	width: 980px;
+	padding-top: 30px;
+	margin: 0 auto;
+	padding-bottom: 90px;
+}
+
+.feature-strengths {
+	width: 320px;
+	height: auto;
+	text-align: center;
+	float: left;
+}
+
+.feature-strengths:nth-child(n+2) {
+	margin-left: 10px;
+}
+
+.fa {
+	font-size: 60px;
+}
+
+.feature-strengths-text {
+	text-align: left;
+}
+
+.strength {
+	font-size: 20px;
+	color: #000000;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/* profileの設定 */
+.profile-background {
+	background-color: #ECEFF1;
+	width: 100%;
+}
+
+.profile-box {
+	width: 1024px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.profile-text1 {
+	padding-top: 90px;
+	font-size: 32px;
+	color: #000000;
+}
+
+.profile-hr {
+	width: 70px;
+	height: 3px;
+	margin: 0 auto;
+	margin-top: 8px;
+	background-color: #EC715F;
+}
+
+.profile-text2 {
+	padding-top: 30px;
+	font-size: 16px;
+	color: #000000;
+	padding-bottom: 30px;
+}
+
+.profile-img-box {
+	width: 512px;
+	float: left;
+}
+
+.profile-img {
+	background-image: url(img/my-icon.jpg);
+	width: 250px;
+	height: 250px;
+	background-size: cover;
+	background-position: center;
+	background-color: red;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+
+.profile-me-box {
+	width: 512px;
+	float: left;
+	padding-bottom: 90px;
+}
+
+.myname {
+	font-size: 20px;
+	padding-bottom: 5px;
+	float: left;
+}
+
+.profile-myname {
+	float: left;
+	text-align: left;
+}
+
+.myskills {
+	font-size: 20px;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	float: left;
+	padding-right: 200px;
+}
+
+.profile-myskills {
+	font-size: 16px;
+	color: #000000;
+	text-align: left;
+	float: left;
+}
+
+/* Contactの設定 */
+.contact-background {
+	width: 100%;
+}
+
+.contact-box {
+	width: 800px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.contact-text1 {
+	font-size: 32px;
+	color: #000000;
+	padding-top: 90px;
+}
+
+.contact-hr {
+	width: 70px;
+	height: 3px;
+	margin: 0 auto;
+	margin-top: 8px;
+	background-color: #EC715F;
+}
+
+.contact-text2 {
+	padding-top: 30px;
+	font-size: 16px;
+	color: #000000;
+	padding-bottom: 30px;
+}
+
+.contact-small-box {
+	width: 400px;
+	float: left;
+	padding-bottom: 90px;
+}
+
+.mail {
+	font-size: 20px;
+	padding-right:65px;
+}
+
+.mail-text {
+	padding-top: 5px;
+}
+
+.contact-smaller-box {
+	width: 150px;
+	text-align: left;
+	margin: 0 auto;
+}
+
+.tell {
+	padding-top: 20px;
+	font-size: 20px;
+}
+
+.tell-text {
+	padding-top: 5px;
+}
+
+.sns {
+	font-size: 20px;
+}
+
+.sns-icon {
+	padding-top: 5px;
+	font-size: 50px;
+}
+
+.sns-icon:nth-child(-n+3) {
+	padding-right: 20px;
+}
+
+/* footerの設定 */
+footer {
+	width: 100%;
+	height: 60px;
+	background-color: #EC715F;
+}
+
+.footer-text {
+	font-size: 16px;
+	color: #FAFAFA;
+	text-align: center;
+	padding-top: 17px;
+}
+
+/* Responsive setting */
+@media screen and (max-width:1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+	/* headerの設定 */
+	header {
+		height: 50px;
+		width: 100%;
+		position: relative;
+	}
+
+	.header-box {
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	.nav .nav-list-item{
+		display: none;
+	}
+
+	.logo {
+		height: 50px;
+	}
+
+	/* Hamberger-menuの設定 */
+
+	.hamberger-menu {
+		display: block;
+		height: 41px;
+		width: 41px;
+		position: absolute;
+		right: 8px;
+		top: 5px;
+		border: 1px solid white;
+		border-radius: 4px;
+	}
+
+	#nav-drawer {
+		margin: 0 auto;
+		position: relative;
+	}
+
+	.nav-unshown {
+		display: none;
+	}
+
+	#nav-open {
+		display: block;
+	    width: 30px;
+	    height: 22px;
+	    vertical-align: middle;
+	    margin: 10px 4px 0 7px;
+	}
+
+	#nav-open span, #nav-open span:before, #nav-open span:after {
+		position: absolute;
+		height: 3px;
+		width: 25px;
+		border-radius: 3px;
+		background: white;
+		display: block;
+		content: "";
+		cursor: pointer;
+
+	}
+
+	#nav-open span:before {
+		bottom: -8px;
+	}
+
+	#nav-open span:after {
+		bottom: -16px;
+	}
+
+	#nav-close {
+		display: none;
+		position: fixed;
+		z-index: 99;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: black;
+		opacity: 0;
+		transition: .1s ease-in-out;
+	}
+
+	#nav-content {
+		overflow: auto;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 9999;
+		width: 90%;
+		max-width: 300px;
+		height: 100%;
+		background: white;
+		transition: .1s ease-in-out;
+		-webkit-transform: translateX(300%);
+		transform: translateX(300%);
+		background-color: rgba(0,0,0,0.5);
+	}
+
+	#nav-input:checked ~ #nav-close {
+		display: block;
+		opacity: .5;
+	}
+
+	#nav-input:checked ~ #nav-content {
+		-webkit-transform: translateX(180%);
+		transform: translateX(180%);
+		box-shadow: 6px 0 25px rgba(0,0,0,.15);
+	}
+
+	.nav-content-text {
+		color: white;
+		margin:20px 0 20px 20px; 
+	}
+
+	.nav-content-texts {
+		border-bottom: 1px solid white;
+	}
+
+	/* main-visualの設定 */
+
+	.main-visual {
+		width: 100%;
+		background-image: url(img/code.png);
+	}
+
+	.main-visual-text1 {
+		font-size: 40px;
+		padding-top: 200px;
+		color: #FAFAFA;
+	}
+
+	.main-visual-text2 {
+		padding-top: 10px;
+		font-size: 18px;
+		color: #FAFAFA;
+	}
+
+	/* Portfolioの設定 */
+	.bg1,.bg3,.bg5 {
+		display: none;
+	}
+
+	.portfolio-box {
+		width: 90%;
+	}
+
+	.portfolio-box-text1 {
+		font-size: 32px;
+		color: #000000;
+	}
+
+	.bg2,.bg4,.bg6 {
+		float: none;
+		margin: 0 auto;
+	}
+
+	.bg4,.bg6 {
+		margin-top: 10px;
+	}
+
+	.portfolio-bg-box {
+		width: 90%;
+	}
+
+	.portfolio-content-box {
+		margin: 0 auto;
+		float: none;
+	}
+
+	.portfolio-content:nth-child(3n) {
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+/* Featureの設定 */
+.feature-box {
+	width: 90%;
+}
+
+.feature-strength-box {
+	width: 90%;
+}
+
+.feature-strengths {
+	float: none;
+	margin: 0 auto;
+}
+
+.feature-strengths:nth-child(n+2) {
+	margin-top: 10px;
+}
+
+/* Profileの設定 */
+.profile-box ,.profile-img-box,.profile-me-box  {
+	width: 90%;
+	margin:0 5% 0 5%;
+}
+.feature-strengths:nth-child(n+2) {
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+/* Contactの設定 */
+.contact-box,.contact-small-box {
+	width: 90%;
+	margin: 0 5% 0 5%;
+}
+
+.contact-smaller-box {
+	text-align: center;
+}
+
+.contact-small-box {
+	padding-bottom: 20px;
+}
+
+.contact-small-box:last-child {
+	padding-bottom: 90px;
+}
+
+.mail {
+	padding: 0;
+}
+
+@media screen and (max-width: 680px) {
+	#nav-input:checked ~ #nav-content {
+		-webkit-transform: translateX(120%);
+		transform: translateX(120%);
+	}
+}
+
+@media screen and (max-width: 507px) {
+	#nav-input:checked ~ #nav-content {
+		-webkit-transform: translateX(90%);
+		transform: translateX(90%);
+	}
+}
+
+@media screen and (max-width: 416px) {
+	#nav-input:checked ~ #nav-content {
+		-webkit-transform: translateX(50%);
+		transform: translateX(50%);
+	}
+}
